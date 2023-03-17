@@ -21,6 +21,5 @@ class RankTest {
         assertThatThrownBy(() -> Rank.calculate(Rank.findRankBy(src), Rank.findRankBy(dst)))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("잘못된 Rank을 입력했습니다.");
-
     }
 }
